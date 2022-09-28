@@ -13,8 +13,8 @@ int main (void)
 	int num, k;
 	cin >> num;
 
-	for(int i = 0; i < num; i++) 	// [1, 2, 3, 4] // 1이 맨 윗장
-		q.push(++i);
+	for(int i = 1; i <= num; i++) 	// [1, 2, 3, 4] // 1이 맨 윗장
+		q.push(i);
 	while(q.size() != 1)
 	{
 		q.pop();					// [2, 3, 4] // 맨 윗장 pop
@@ -22,5 +22,5 @@ int main (void)
 		q.pop();					// [3, 4, 2] // 맨 윗장 pop
 	}
 
-	cout << q.back();
+	cout << q.front();
 }
