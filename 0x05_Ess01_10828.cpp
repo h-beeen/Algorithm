@@ -4,7 +4,7 @@
 using namespace std;
 
 int my_stack[max_i];
-int pos;
+int pos = 0;
 
 void push(int value)
 {
@@ -55,7 +55,7 @@ int main(void)
 		else if(s == "empty")
 		{
 			if(pos == 0)
-				cout << -1 << "\n";
+				cout << 1 << "\n";
 			else
 				cout << 0 << "\n";	
 		}
