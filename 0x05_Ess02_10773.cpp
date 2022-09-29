@@ -9,7 +9,7 @@ int main(void)
 	cout.tie(0);
 	
 	stack<int> my_stack;
-	int a, result;
+	int a, result = 0;
 	cin >> a;
 
 	while(a--)
