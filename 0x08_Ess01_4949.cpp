@@ -16,11 +16,8 @@ int main (void)
 
 	getline(cin, s);
 	
-	if(s[0] == '.' && s[1] == '\0')
-	{
-		cout << "yes" << '\n';
+	if(s == ".")
 		break;
-	}
 
 	int flag = 1;
 	int i = 0;
@@ -43,11 +40,6 @@ int main (void)
 				}
 				else if(a.top() == '[')
 					a.pop();
-				else
-				{
-					flag = 0;
-					break;
-				}
 			}
 
 			else if(s[i] == ')')
@@ -59,17 +51,11 @@ int main (void)
 				}
 				else if(a.top() == '(')
 					a.pop();
-				else
-				{
-					flag = 0;
-					break;
-				}
 			}
 			i++;
 		}
-		if(flag && a.empty()) cout << "yes" << '\n';
+		if(flag && a.empty()) cout << "yes\n";
 		else
-			cout << "no" << '\n';
+			cout << "no\n";
 	}
-	// 백준에러 Why..?
 }
