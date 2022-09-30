@@ -44,10 +44,10 @@ int main (void)
 
 			else if(s[i] == ')')
 			{
-				if(a.empty())				// 스택이 비어있는데 닫는 기호가 나온다면
+				if(a.empty())
 				{
-					flag = 0;				// Flag = 0
-					break;					// Break;
+					flag = 0;
+					break;	
 				}
 				else if(a.top() == '(')
 					a.pop();
