@@ -1,20 +1,15 @@
 #include <iostream>
 #include <queue>
-#include <string>
-#define X first
-#define Y second
 using namespace std;
 
-int board[105][105]; // 미로
-int visit[105][105]; // 방문 표시
-int check[105][105]; // 시작점으로 부터 거리 표시
 
 int n, m;
 string s;
-int board_source[105];
+int	board[105][105] = {};
+int vis[105][105] = {};
 
-int dx[4] = {1, 0, -1, 0};
-int dy[4] = {0, 1, 0, -1};
+int dx[4] = {0, 1, -1, 0};
+int dy[4] = {1, 0, 0, -1};
 
 int main(void)
 {
@@ -23,40 +18,45 @@ int main(void)
 	cout.tie(0);
 
 	cin >> n >> m;
-
+	
 	for(int i = 0; i < n; i++)
 	{
 		cin >> s;
 		for(int j = 0; j < m; j++)
-			board[i][j] = (int) s[j] - 48;
+			board[i][j] = s[j] - 48;
 	}
 
-	// BFS
-	visit[0][0] = 1; // 시작점 방문 표시
-	queue<pair<int,int> > q; // 큐 생성
-	q.push(make_pair(0,0));
+	queue <pair<int,int> > q;
+	vis[0][0] = 1;
+	q.push(make_pair(0, 0));
 
 	while(!q.empty())
 	{
-		int x = q.front().first;
-		int y = q.front().second;
-
+		pair<int,int> temp = q.front();
 		q.pop();
-		for(int i = 0; i < 4; i++)
+
+		for(int dir = 0; dir < 4; dir++)
 		{
-			int next_x = x + dx[i];
-			int next_y = y + dy[i];
-			
-			if(next_x < n && next_x >= 0 && next_y < m && next_y >= 0) // 미로의 범위 내
-			{
-				if(board[next_x][next_y] == 1 && visit[next_x][next_y] == 0)
-				{
-					check[next_x][next_y] = check[x][y] + 1;
-					visit[next_x][next_y] = 1;
-					q.push(make_pair(next_x, next_y));
-				}
-			}
+			int nx = temp.first + dx[dir];
+			int ny = temp.second + dy[dir];
+
+			if(nx < 0 || nx > n || ny < 0 || ny > m)
+				continue;
+			if(!board[nx][ny] || vis[nx][ny])
+				continue;
+	
+			vis[nx][ny] = vis[temp.first][temp.second] + 1;
+			q.push(make_pair(nx, ny));
 		}
 	}
-	cout << check[n-1][m-1] + 1;
+	cout << vis[n-1][m-1];
+
+/*	visit 경로 출력 구문
+	for(int i =0; i < n; i++)
+	{
+		cout << '\n';
+		for(int j=0; j < m; j++)
+			cout << vis[i][j];
+	}
+*/
 }

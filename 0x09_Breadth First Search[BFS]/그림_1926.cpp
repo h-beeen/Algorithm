@@ -52,7 +52,7 @@ int main(void)
 					if(!board[nx][ny] || vis[nx][ny])
 						continue;
 					
-					vis[nx][ny] = 1;
+					vis[nx][ny] = vis[temp.first][temp.second];
 					q.push(make_pair(nx,ny));
 				}
 			}
