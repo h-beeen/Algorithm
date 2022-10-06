@@ -20,41 +20,46 @@ int main (void)
 		int board[55][55] = {};
 
 		cin >> M >> N >> K;				// 이번 TC의 M(가로), N(세로), K(이번 TC의 배추 개수)
-		queue <pair<int, int> > q;
 		for(int i = 0; i < K; i++)
 		{
 			cin >> X >> Y;
 			board[X][Y] = 1;
-			q.push(make_pair(X,Y));
 		}
+		
 
-		while(!q.empty())
+		for(int i = 0; i < M; i++)
 		{
+			for(int j = 0; j < N; j++)
+			{
+				if(!board[i][j] || vis[i][j])
+					continue;
 			
-			pair<int,int> temp = q.front();
-			if(vis[temp.first][temp.second] == 1)
-			{
-				q.pop();
-				continue;
-			}
-			else
-			{
 				area++;
-				q.pop();
-			}
-
-			for(int dir = 0; dir < 4; dir++)
-			{
-				int nx = temp.first + dx[dir];
-				int ny = temp.second + dy[dir];
-
-				if(nx >= 0 && nx < M && ny >= 0 && ny < N && !vis[nx][ny])
+				queue<pair<int, int> > q;
+				vis[i][j] = 1;
+				q.push(make_pair(i, j));
+			
+				while(!q.empty())
 				{
-					q.push(make_pair(nx,ny));
-					vis[nx][ny] = 1;
+					pair<int,int> temp = q.front();
+					q.pop();
+
+					for(int dir = 0; dir < 4; dir++)
+					{
+						int nx = temp.first + dx[dir];
+						int ny = temp.second + dy[dir];
+
+						if(nx < 0 || nx > M || ny < 0 || ny > N)
+							continue;
+						if(!board[nx][ny] || vis[nx][ny])
+							continue;
+	
+							q.push(make_pair(nx,ny));
+							vis[nx][ny] = 1;
+					}
 				}
 			}
 		}
-		cout << area << '\n'; 
+		cout << area << '\n';
 	}
 }
