@@ -19,14 +19,8 @@ int	main (void)
 	queue<pair<int,int> > q;
 
 	for(int i = 0; i < n; i++)	
-	{
 		for(int j = 0; j < m; j++)
-		{
 			cin >> board[i][j];
-			if(board[i][j] == 1)
-				q.push(make_pair(i,j));
-		}
-	}
 
 	while(!q.empty())
 	{
