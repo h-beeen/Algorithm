@@ -18,9 +18,15 @@ int	main (void)
 	cin >> m >> n;
 	queue<pair<int,int> > q;
 
-	for(int i = 0; i < n; i++)	
+	for(int i = 0; i < n; i++)
+	{
 		for(int j = 0; j < m; j++)
+		{
 			cin >> board[i][j];
+			if(board[i][j] == 1)
+				q.push(make_pair(i,j));
+		}
+	}
 
 	while(!q.empty())
 	{
@@ -40,7 +46,7 @@ int	main (void)
 		}
 	}
 
-	for(int i = 0; i < n; i++)	
+	for(int i = 0; i < n; i++)
 	{
 		for(int j = 0; j < m; j++)
 		{
@@ -54,5 +60,5 @@ int	main (void)
 		}
 	}
 		cout << result -1 << '\n';
-	 
+
 }
