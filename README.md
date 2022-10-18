@@ -4,7 +4,7 @@
 ---
 Algorithm|BOJ Lev.|Q Num.|Question|Status
 --|--|--|--|--|
-[Array](hhttps://github.com/h-beeen/Algorithm/tree/master/0x03_Array)|Bronze IV|10808|알파벳 개수|:o:
+[Array](https://github.com/h-beeen/Algorithm/tree/master/0x03_Array)|Bronze IV|10808|알파벳 개수|:o:
 &nbsp;|Bronze II|2577|숫자의 개수|:o:
 &nbsp;|Silver V|1475|방 번호|:o:
 &nbsp;|Silver III|3273|두 수의 합|:o:
