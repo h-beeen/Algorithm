@@ -38,8 +38,7 @@ Linked List|Silver II|1406|에디터|:x:
 [Recursion](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0B_Recursuon)|Silver I|1629|곱셈|:x:
 &nbsp;|Silver I|11729|하노이 탑 이동 순서|:x:
 &nbsp;|Silver I|1074|Z|:x:
-[Back Tracking](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0B_Recursuon)|Silver I|15649|N과 M (1)|
-&nbsp;|Silver III|15649|N과 M (1)|:o:
+[Back Tracking](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0B_Recursuon)|Silver III|15649|N과 M (1)|:o:
 &nbsp;|Silver III|15650|N과 M (2)|:o:
 &nbsp;|Silver III|15651|N과 M (3)|:o:
 &nbsp;|Silver III|15652|N과 M (4)|:o:
