@@ -39,5 +39,9 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver I|11729|하노이 탑 이동 순서|:x:
 &nbsp;|Silver I|1074|Z|:x:
 [Back Tracking](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0B_Recursuon)|Silver I|15649|N과 M (1)|
-&nbsp;|Gold IV :star:|9663|N-Queen|
-&nbsp;|Silver II|1182|부분수열의 합|
+&nbsp;|Silver III|15649|N과 M (1)|:o:
+&nbsp;|Silver III|15650|N과 M (2)|:o:
+&nbsp;|Silver III|15651|N과 M (3)|:o:
+&nbsp;|Silver III|15652|N과 M (4)|:o:
+&nbsp;|Silver III|15654|N과 M (5)|:o:
+&nbsp;|Silver III|15655|N과 M (6)|:o:
