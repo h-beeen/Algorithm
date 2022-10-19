@@ -9,7 +9,7 @@ bool isused[10];
 void func(int k) { 
   if (k == m) {
     for (int i = 0; i < m; ++i) {
-      cout << arr[i] << ' ';
+      cout << num[arr[i]] << ' ';
     }
     cout << '\n';
     return;
