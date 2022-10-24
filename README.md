@@ -44,3 +44,11 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver III|15652|N과 M (4)|:o:
 &nbsp;|Silver III|15654|N과 M (5)|:o:
 &nbsp;|Silver III|15655|N과 M (6)|:o:
+[Sort I](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0E_Sort_I)|Bronze II|2750|수 정렬하기|
+&nbsp;|Silver V|2751|수 정렬하기 2|
+&nbsp;|Bronze I|10989|수 정렬하기 3|
+&nbsp;|Silver V|11931|수 정렬하기 4|
+&nbsp;|Silver V|15688|수 정렬하기 5|
+&nbsp;|Silver V|10814|나이순 정렬|
+&nbsp;|Silver V|11650|좌표 정렬하기|
+&nbsp;|Silver V|11651|좌표 정렬하기 2|

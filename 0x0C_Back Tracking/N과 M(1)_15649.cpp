@@ -24,7 +24,6 @@ void func(int k)
 			func(k+1);
 			isused[i] = 0;
 		}
-	}
 }
 
 int	main(void)
