@@ -1,15 +1,15 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 int a, num;
-int arr[1005];
+int arr[1000005];
 
 int main (void)
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cin >> a;
+    
     for(int i = 0; i < a; i++)
     {
         cin >> num;

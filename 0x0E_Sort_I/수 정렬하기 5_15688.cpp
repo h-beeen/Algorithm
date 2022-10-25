@@ -4,7 +4,6 @@ using namespace std;
 
 const int MXN = 2000000;
 const int HALF = 1000000;
-char c = '0';
 
 int main (void)
 {
@@ -15,14 +14,13 @@ int main (void)
     vector <int> v(MXN+2);
     int a, num;
     cin >> a;
-
     while(a--)
     {
         cin >> num;
         v[num+HALF]++;
     }
 
-    for(int i = 0; i < MXN; i++)
+    for(int i = 0; i <= MXN; i++)
     {
         while(v[i]--)
             cout << i - HALF << '\n';
