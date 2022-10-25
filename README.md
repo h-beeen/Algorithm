@@ -25,7 +25,7 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver IV|3986|좋은 단어|:o:
 &nbsp;|Silver II|10799|쇠막대기|:o:
 &nbsp;|Silver I|2504|괄호의 값|:x:
-[BFS](https://github.com/h-beeen/Algorithmtree/master/0x09_Breadth%20First%20Search%5BBFS%5D)|Silver I|1926|그림|:o:
+[BFS](https://github.com/h-beeen/Algorithm/tree/master/0x09_Breadth%20First%20Search%5BBFS%5D)|Silver I|1926|그림|:o:
 &nbsp;|Silver I|2178|미로 탐색|:o:
 &nbsp;|Gold V :star:|7576|토마토 (2차원)|:o:
 &nbsp;|Gold IV :star:|4179|불!|:o:
@@ -49,6 +49,6 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Bronze I|10989|수 정렬하기 3|:o:
 &nbsp;|Silver V|11931|수 정렬하기 4|:o:
 &nbsp;|Silver V|15688|수 정렬하기 5|:o:
-&nbsp;|Silver V|10814|나이순 정렬|:o:
+&nbsp;|Silver V|10814|나이순 정렬|:x:
 &nbsp;|Silver V|11650|좌표 정렬하기|:o:
 &nbsp;|Silver V|11651|좌표 정렬하기 2|:o:
