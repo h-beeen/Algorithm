@@ -30,9 +30,9 @@ int main(void)
         v.push_back(s);
     }
 
-    sort(v.begin(), v.end());
-    stable_sort(v.begin(), v.end(), compare);
-    v.erase(unique(v.begin(), v.end()), v.end());
+    sort(v.begin(), v.end());                       // 알파벳 순 선 정렬
+    stable_sort(v.begin(), v.end(), compare);       // 알파벳 순 정렬 후, 글자 순 정렬
+    v.erase(unique(v.begin(), v.end()), v.end());   // 전체 정렬 후, 글자 수 제거
 
     for(int i = 0; i < v.size(); i++)
         cout << v[i] << endl;
