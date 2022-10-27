@@ -54,5 +54,10 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver V|11651|좌표 정렬하기 2|:o:
 [Sort II](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0F_Sort_II)|Silver IV|5648|역원소 정렬|:o:
 &nbsp;|Silver V|1181|단어 정렬|:o:
-&nbsp;|Silver III|2910|빈도 정렬|:x:
 &nbsp;|Silver III|7795|먹을 것인가 먹힐 것인가|:o:
+&nbsp;|Silver III|1431|시리얼 번호|:x:
+&nbsp;|Silver IV|11652|카드|:x:
+&nbsp;|Silver IV|11656|접미사 배열|:o:
+&nbsp;|Silver IV|10825|국영수|:o:
+&nbsp;|Silver III|2910|빈도 정렬|:x:
+&nbsp;|Silver V|10814|나이순 정렬|:x:
