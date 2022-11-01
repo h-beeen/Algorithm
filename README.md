@@ -61,3 +61,6 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver III|2910|빈도 정렬|:x:
 &nbsp;|Silver V|10814|나이순 정렬|:x:
 &nbsp;|Unknown :star:|Extra|Merge Sort|:o:
+[DP]https://github.com/h-beeen/Algorithm/tree/master/0x10_Dynamic%20Programming%5BDP%5D|Silver III|1463|1로 만들기|:o:
+&nbsp;|Silver III|9095|1, 2, 3 더하기|:o:
+&nbsp;|Silver III|2579|계단 오르기|:o:
