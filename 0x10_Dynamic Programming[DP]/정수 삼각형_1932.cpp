@@ -31,8 +31,8 @@ int main(void)
 
     for(int i = 3; i <= n; i++)
     {
-        res[i] = max(d[i-1][k], d[i-1][k+1]);
-        if(d[i-1][k] >= d[i-1][k])
+        res[i] = max(d[i][k], d[i][k+1]);
+        if(d[i][k] >= d[i][k+1])
             k = 1;
         else
             k = 2;
