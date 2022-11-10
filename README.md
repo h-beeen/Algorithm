@@ -8,23 +8,15 @@ Algorithm|BOJ Lev.|Q Num.|Question|Status
 &nbsp;|Bronze II|2577|숫자의 개수|:o:
 &nbsp;|Silver V|1475|방 번호|:o:
 &nbsp;|Silver III|3273|두 수의 합|:o:
-Linked List|Silver II|1406|에디터|:x:
-&nbsp;|Silver II|5397|키로거|:x:
-&nbsp;|SIlver IV|1158|요세푸스 문제|:x:
 [Stack](https://github.com/h-beeen/Algorithm/tree/master/0x05_Stack)|Silver IV|10828|스택|:o:
 &nbsp;|Silver IV|10773|제로|:o:
-&nbsp;|Silver II|1874|스택 수열|:x:
 &nbsp;|Gold V :star:|2493|탑|:o:
 [Queue](https://github.com/h-beeen/Algorithm/tree/master/0x06_Queue)|Silver IV|10845|큐|:o:
 &nbsp;|Silver IV|18258|큐 2|:o:
 &nbsp;|Silver IV|2164|카드 2|:o:
 [Deque](https://github.com/h-beeen/Algorithm/tree/master/0x07_Deque)|Silver IV|10866|덱|:o:
-&nbsp;|Silver III|1021|회전하는 큐|:x:
-&nbsp;|Gold V :star:|5430|AC|:x:
-[Tap into Stack](https://github.com/h-beeen/Algorithm/tree/master/0x08_Utilization%20of%20Stack)|Silver IV|4949|균형잡힌 세상|:x:
-&nbsp;|Silver IV|3986|좋은 단어|:o:
+[Tap into Stack](https://github.com/h-beeen/Algorithm/tree/master/0x08_Utilization%20of%20Stack)|Silver IV|3986|좋은 단어|:o:
 &nbsp;|Silver II|10799|쇠막대기|:o:
-&nbsp;|Silver I|2504|괄호의 값|:x:
 [BFS](https://github.com/h-beeen/Algorithm/tree/master/0x09_Breadth%20First%20Search%5BBFS%5D)|Silver I|1926|그림|:o:
 &nbsp;|Silver I|2178|미로 탐색|:o:
 &nbsp;|Gold V :star:|7576|토마토 (2차원)|:o:
@@ -32,18 +24,14 @@ Linked List|Silver II|1406|에디터|:x:
 &nbsp;|Silver I|1697|숨바꼭질|:o:
 &nbsp;|Silver II|1012|유기농 배추|:o:
 &nbsp;|Gold V :star:|10026|적록색약|:o:
-&nbsp;|Gold V :star:|7569|토마토 (3차원)|:x:
-&nbsp;|Silver I|7562|나이트의 이동|:x:
-&nbsp;|Gold IV :star:|5427|불|:x:
-[Recursion](https://github.com/h-beeen/Algorithm/tree/master/0x0B_Recursuon)|Silver I|1629|곱셈|:x:
-&nbsp;|Silver I|11729|하노이 탑 이동 순서|:x:
-&nbsp;|Silver I|1074|Z|:x:
 [Back Tracking](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0C_Back%20Tracking)|Silver III|15649|N과 M (1)|:o:
 &nbsp;|Silver III|15650|N과 M (2)|:o:
 &nbsp;|Silver III|15651|N과 M (3)|:o:
 &nbsp;|Silver III|15652|N과 M (4)|:o:
 &nbsp;|Silver III|15654|N과 M (5)|:o:
 &nbsp;|Silver III|15655|N과 M (6)|:o:
+&nbsp;|Silver III|15656|N과 M (7)|:o:
+&nbsp;|Silver III|15663|N과 M (9)|:o:
 [Sort I](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0E_Sort_I)|Bronze II|2750|수 정렬하기|:o:
 &nbsp;|Silver V|2751|수 정렬하기 2|:o:
 &nbsp;|Bronze I|10989|수 정렬하기 3|:o:
@@ -54,13 +42,9 @@ Linked List|Silver II|1406|에디터|:x:
 [Sort II](https://github.com/h-beeen/Algorithm_Study/tree/master/0x0F_Sort_II)|Silver IV|5648|역원소 정렬|:o:
 &nbsp;|Silver V|1181|단어 정렬|:o:
 &nbsp;|Silver III|7795|먹을 것인가 먹힐 것인가|:o:
-&nbsp;|Silver III|1431|시리얼 번호|:x:
-&nbsp;|Silver IV|11652|카드|:x:
 &nbsp;|Silver IV|11656|접미사 배열|:o:
-&nbsp;|Silver IV|10825|국영수|:o:
-&nbsp;|Silver III|2910|빈도 정렬|:x:
-&nbsp;|Silver V|10814|나이순 정렬|:x:
-&nbsp;|Unknown :star:|Extra|Merge Sort|:o:
 [DP](https://github.com/h-beeen/Algorithm/tree/master/0x10_Dynamic%20Programming%5BDP%5D)|Silver III|1463|1로 만들기|:o:
 &nbsp;|Silver III|9095|1, 2, 3 더하기|:o:
-&nbsp;|Silver III|2579|계단 오르기|:o:
+[Greedy](https://github.com/h-beeen/Algorithm/tree/master/0x11_Greedy)|Silver IV|11047|동전 만들기|:o:
+&nbsp;|Silver IV|11399|ATM|:o:
+&nbsp;|Silver IV|1026|보물|:o:
