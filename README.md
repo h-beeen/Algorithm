@@ -51,3 +51,4 @@ Algorithm|BOJ Lev.|Q Num.|Question|Status
 &nbsp;|Silver V|1439|뒤집기|:o:
 &nbsp;|Silver IV|11047|동전 0|:o:
 &nbsp;|Silver I|15903|카드 합체 놀이|:o:
+&nbsp;|Gold IV :star:|1744|수 묶기|:o:
