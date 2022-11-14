@@ -12,10 +12,11 @@ int monkey_y[4] = { 1, -1, 0, 0 };
 int knight_x[8] = { -2, -2, -1, -1, 1, 1, 2, 2 };
 int knight_y[8] = { 1, -1, 2, -2, 2, -2, 1, -1 };
 
-queue <tuple<int, int, int> > Q;
+queue <tuple<int, int, int> > Q;	
 int x, y, k;
 
-int main(void) {
+int main(void) 
+{
 	ios::sync_with_stdio(0);
   	cin.tie(0);
 
@@ -30,8 +31,8 @@ int main(void) {
 	while (!Q.empty())
 	{
  
-    	q_k = get<0>(Q.front());					// Q의 현 동작 수 get 후 q_k에 저장
-		q_x = get<1>(Q.front());					// Q의 현 x좌표 q_x에 저장
+    	q_k = get<0>(Q.front());					// Q의 현 동작 수 get 후 q_k에 저장 q_k == 지금 현재 큐의 나이트 동작 횟수
+		q_x = get<1>(Q.front());					// Q의 현 x좌표 q_x에 저장			q_x == 
 		q_y = get<2>(Q.front());					// Q의 현 y좌표 q_y에 저장
 
     	Q.pop();
