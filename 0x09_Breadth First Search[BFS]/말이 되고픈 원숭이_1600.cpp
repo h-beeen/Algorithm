@@ -1,77 +1,88 @@
 #include <iostream>
+#include <algorithm>
 #include <queue>
+#include <tuple>
 using namespace std;
 
-int board[205][205];
-int vis[205][205];
+int board[202][202];
+int vis[32][202][202];
+int q_k, q_x, q_y, temp_x, temp_y;
+int monkey_x[4] = { 0, 0, 1, -1 };
+int monkey_y[4] = { 1, -1, 0, 0 };
+int knight_x[8] = { -2, -2, -1, -1, 1, 1, 2, 2 };
+int knight_y[8] = { 1, -1, 2, -2, 2, -2, 1, -1 };
 
-int dx[4] = {1, 0, -1, 0};						// 원숭이의 x축 이동 경로
-int dy[4] = {0, 1, 0, -1};						// 원숭이의 y축 이동 경로
-int knight_x[8] = {-1, 1, 2, 2, -1, 1, -2, -2};	// 나이트의 x축 이동 경로
-int knight_y[8] = {2, 2, 1, -1, -2, -2, 1, -1};	// 나이트의 y축 이동 경로
+queue <tuple<int, int, int> > Q;
+int x, y, k;
 
-int k, n, m, area, mx = 0;
-int num = 0;
-
-int main(void)
-{
+int main(void) {
 	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
+  	cin.tie(0);
 
-	cin >> k >> n >> m;							// 동작수, 가로 길이, 세로 길이
+  	cin >> k >> y >> x;
+  	for (int i = 0; i < x; i++)
+		for (int j = 0; j < y; j++)
+      		cin >> board[i][j];
 
-	for(int i = 0; i < m; i++)
-		for(int j = 0; j < n; j++)
-			cin >> board[i][j];					// 1. 보드에 Input Value 저장
+	Q.push(make_tuple(0, 0, 0));
+	vis[0][0][0] = 1;
+  
+	while (!Q.empty())
+	{
+ 
+    	q_k = get<0>(Q.front());					// Q의 현 동작 수 get 후 q_k에 저장
+		q_x = get<1>(Q.front());					// Q의 현 x좌표 q_x에 저장
+		q_y = get<2>(Q.front());					// Q의 현 y좌표 q_y에 저장
 
+    	Q.pop();
+    	if (q_k < k)
+		{
+      		for (int i = 0; i < 8; i++)
+			{
+        		{
+					temp_x = q_x + knight_x[i];
+					temp_y = q_y + knight_y[i];
+				}
+        		if(temp_x < 0 || temp_y < 0 || x <= temp_x || y <= temp_y)
+					continue;
+	
+				if(board[temp_x][temp_y])
+					continue;
+       		 	
+				if(vis[q_k + 1][temp_x][temp_y])
+					continue;
+       		 	
+				vis[q_k + 1][temp_x][temp_y] = vis[q_k][q_x][q_y] + 1;
+       			Q.push(make_tuple(q_k+1, temp_x, temp_y));
+      		}
+    	}
 
-	// for(int i= 0; i < n; i++)
-	// {
-	// 	for(int j = 0; j < m; j++)
-	// 	{
-	// 		if(!(board[i][j]) || vis[i][j])		// 찾을 필요 없는 구역이라면
-	// 			continue;							// 다음 반복문 continue
+    	for (int i = 0; i < 4; i++)
+		{
+    		temp_x = q_x + monkey_x[i];
+			temp_y = q_y + monkey_y[i];
 
-	// 		num++;									// num = 찾은 시작점의 개수, 즉 그림의 개수				
-	// 		queue<pair<int, int> > q;				// 그 그림의 큐 생성
-	// 		vis[i][j] = 1;						// 나 왔어!
-	// 		q.push(make_pair(i, j));				// 시작점 큐에 Push
+    		if(temp_x < 0 || temp_y < 0 || x <= temp_x || y <= temp_y)
+				continue;
 
-	// 		area = 0;
-	// 		while(!q.empty())						// 큐에 아무 노드도 남지 않을 때 까지 Loop
-	// 		{
-	// 			area++;
-	// 			pair<int, int> temp = q.front();	// 큐의 Front값 pair형으로 저장
-	// 			q.pop();							// 저장 후 Pop
-				
-	// 			for(int dir = 0; dir < 4; dir++)
-	// 			{
-	// 				int nx = temp.first + dx[dir];
-	// 				int ny = temp.second + dy[dir];
+    		if(board[temp_x][temp_y])
+				continue;
 
-	// 				if(nx < 0 || nx > n || ny < 0 || ny > m)	// 범위 밖 조건
-	// 					continue;								// 다음 반복문으로 continue
-	// 				if(!board[nx][ny] || vis[nx][ny])
-	// 					continue;
-					
-	// 				vis[nx][ny] = vis[temp.first][temp.second];
-	// 				q.push(make_pair(nx,ny));
-	// 			}
-	// 		}
-	// 		if(mx <= area)
-	// 			mx = area;
-	// }
-	// }
+    		if(vis[q_k][temp_x][temp_y])
+				continue;
 
-	// 보드 입출력 테스트 구문
-	// cout << endl;
-	// for(int i = 0; i < m; i++)
-	// {
-	// 	for(int j = 0; j < n; j++)
-	// 	{
-	// 		cout <<  board[i][j];
-	// 	}
-	// 	cout << endl;
-	// }
+    		vis[q_k][temp_x][temp_y] = vis[q_k][q_x][q_y] + 1;
+    		Q.push(make_tuple(q_k, temp_x, temp_y));
+    	}
+  	}
+	int ans = 2147483647;
+
+	for (int i = 0; i < k + 1; i++)
+		if(vis[i][x - 1][y - 1])
+			ans = min(ans, vis[i][x - 1][y - 1]);
+	
+		if(ans == 2147483647)
+			cout << -1;
+		else
+			cout << ans - 1;
 }
