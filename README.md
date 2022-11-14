@@ -18,6 +18,7 @@ Algorithm|BOJ Lev.|Q Num.|Question|Status
 [Tap into Stack](https://github.com/h-beeen/Algorithm/tree/master/0x08_Utilization%20of%20Stack)|Silver IV|3986|좋은 단어|:o:
 &nbsp;|Silver II|10799|쇠막대기|:o:
 [BFS](https://github.com/h-beeen/Algorithm/tree/master/0x09_Breadth%20First%20Search%5BBFS%5D)|Silver I|1926|그림|:o:
+&nbsp;|Gold III :star:|1600|말이 되고픈 원숭이|:o:
 &nbsp;|Silver I|2178|미로 탐색|:o:
 &nbsp;|Gold V :star:|7576|토마토 (2차원)|:o:
 &nbsp;|Gold IV :star:|4179|불!|:o:
