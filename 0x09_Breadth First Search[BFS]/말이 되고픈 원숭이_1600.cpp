@@ -25,6 +25,7 @@ int main(void)
 		for(int j = 0; j < n; j++)
 			cin >> board[i][j];					// 1. 보드에 Input Value 저장
 
+
 	// for(int i= 0; i < n; i++)
 	// {
 	// 	for(int j = 0; j < m; j++)
@@ -60,16 +61,17 @@ int main(void)
 	// 		}
 	// 		if(mx <= area)
 	// 			mx = area;
-	// 	}
+	// }
 	// }
 
-	cout << endl;
-	for(int i = 0; i < m; i++)
-	{
-		for(int j = 0; j < n; j++)
-		{
-			cout <<  board[i][j];
-		}
-		cout << endl;
-	}
+	// 보드 입출력 테스트 구문
+	// cout << endl;
+	// for(int i = 0; i < m; i++)
+	// {
+	// 	for(int j = 0; j < n; j++)
+	// 	{
+	// 		cout <<  board[i][j];
+	// 	}
+	// 	cout << endl;
+	// }
 }
