@@ -1,6 +1,4 @@
 # Algorithm Study
-##### With 42 8-2 Algorithm Crew
-
 ---
 Algorithm|BOJ Lev.|Q Num.|Question|Status
 --|--|--|--|--|
@@ -54,5 +52,5 @@ Algorithm|BOJ Lev.|Q Num.|Question|Status
 &nbsp;|Silver IV|11047|동전 0|:o:
 &nbsp;|Silver I|15903|카드 합체 놀이|:o:
 &nbsp;|Gold IV :star:|1744|수 묶기|:o:
-[Two Pointer](https://github.com/h-beeen/Algorithm/tree/master/0x14_Two%20Pointer)|Gold V :star|2470|용액 만들기|:o:
+[Two Pointer](https://github.com/h-beeen/Algorithm/tree/master/0x14_Two%20Pointer)|Gold V :star:|2470|용액 만들기|:o:
 &nbsp;|Gold IV :star:|14921|용액 합성하기|:o:
