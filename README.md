@@ -11,6 +11,7 @@ Algorithm|BOJ Lev.|Q Num.|Question|Status
 [Stack](https://github.com/h-beeen/Algorithm/tree/master/0x05_Stack)|Silver IV|10828|스택|:o:
 &nbsp;|Silver IV|10773|제로|:o:
 &nbsp;|Gold V :star:|2493|탑|:o:
+&nbsp;|Gold IV :star:|17298|오큰수|:o:
 [Queue](https://github.com/h-beeen/Algorithm/tree/master/0x06_Queue)|Silver IV|10845|큐|:o:
 &nbsp;|Silver IV|18258|큐 2|:o:
 &nbsp;|Silver IV|2164|카드 2|:o:
