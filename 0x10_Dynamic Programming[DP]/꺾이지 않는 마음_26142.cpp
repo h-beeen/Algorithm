@@ -15,7 +15,7 @@ int main (void)
 	for(int i = 0; i < n; i++)
 		cin >> day[i] >> dr_len[i];
 
-	sort(dr_len, dr_len + n, greater<int>());
+	sort(dr_len, dr_len + n, greater<long long>());
 	res[0] = dr_len[0];
 	for(int i = 1; i < n; i++)
 	{

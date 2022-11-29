@@ -5,14 +5,13 @@
 
 using namespace std;
 
-vector<int> dp;
-vector<bool> mal(10, false);
+vector<bool> TF(10, false);
 
 bool check(int now)
 {
     string s = to_string(now);
     for(int i = 0; i < s.length(); i++)
-        if(mal[s[i] - 48])
+        if(TF[s[i] - 48])
             return false;
     return true;
 }
@@ -25,19 +24,19 @@ int main(void)
     for(int i = 0; i < c; i++)
 	{
         cin >> t;
-        mal[t] = true;
+        TF[t] = true;
     }
     string st = to_string(n);
-    int minimum = abs(n - 100);
+    int min_val = abs(n - 100);
     for(int i = 0; i <= 1000000; i++)
 	{
         if(check(i))
 		{
             int t = abs(n - i) + to_string(i).length();
-            minimum = min(minimum,t);
+            min_val = min(min_val,t);
         }
     }
-    cout << minimum <<endl;
+    cout << min_val <<endl;
     return (0);
     {
 
