@@ -24,6 +24,7 @@ void func(int k)
 			func(k+1);
 			isused[i] = 0;
 		}
+	}
 }
 
 int	main(void)
@@ -32,5 +33,5 @@ int	main(void)
 	cin.tie(0);
 	cout.tie(0);
 	cin >> n >> m;
-	func(0);	
+	func(0);
 }
