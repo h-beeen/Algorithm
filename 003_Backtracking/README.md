@@ -1,5 +1,5 @@
-## Sort
-#### < Part 001. 정렬 >
+## Backtracking
+#### < Part 003. 재귀 응용 및 백트래킹 알고리즘 >
 &nbsp;
 |Seq.|Lev.|Num.|Question|Status|
 |:--:|:--:|:--:|:--:|:--:|
