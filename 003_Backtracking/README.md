@@ -1,5 +1,6 @@
-## 0x0C Backtracking
-
+## Sort
+#### < Part 001. 정렬 >
+&nbsp;
 |Seq.|Lev.|Num.|Question|Status|
 |:--:|:--:|:--:|:--:|:--:|
 |001|🍀 S3|15649|N과 M (1)|:o:

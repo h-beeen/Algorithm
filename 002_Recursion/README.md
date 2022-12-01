@@ -1,4 +1,5 @@
-## 0x0B Recursion
+## Recursion
+#### < Part 002. 재귀 및 재귀 함수 Algorithm >
 &nbsp;
 |Seq.|Lev.|Num.|Question|Status|
 |:--:|:--:|:--:|:--:|:--:|
