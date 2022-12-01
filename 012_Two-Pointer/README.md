@@ -1,5 +1,5 @@
 ## Two-Pointer
-#### < Part 011. Two-Pointer Algorithm >
+#### < Part 012. Two-Pointer Algorithm >
 &nbsp;
 |Seq.|Lev.|Num.|Question|Status|
 |:--:|:--:|:--:|:--:|:--:|
