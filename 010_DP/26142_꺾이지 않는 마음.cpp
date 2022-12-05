@@ -49,11 +49,11 @@ int main (void)
 		k1++;
 	}
 
-	cout << endl;
-	for(int i = 0; i < n; i++) 
-	{
-		cout << '\n';
-		for(int j = 0; j < n; j++)
-			cout << res[i][j] << ' ';
-	}
+	// cout << endl;
+	// for(int i = 0; i < n; i++) 
+	// {
+	// 	cout << '\n';
+	// 	for(int j = 0; j < n; j++)
+	// 		cout << res[i][j] << ' ';
+	// }
 }
