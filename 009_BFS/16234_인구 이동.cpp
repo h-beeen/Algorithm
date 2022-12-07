@@ -8,7 +8,7 @@ int dx[4] = {1, 0 ,-1, 0};
 int dy[4] = {0, 1, 0, -1};
 bool flag;
 int board[105][105], vis[52][52], N, L, R;
-int cnt, nx, ny = 0;
+int cnt, nx, ny, sm = 0;
 queue <pair<int, int> > Q;	
 
 int main(void)
@@ -27,13 +27,12 @@ int main(void)
 		flag = false;
 		for (int i = 0; i < N; i++)
 		{
+			vector<pair<int, int> > tmp;
 			for (int j = 0; j < N; j++)
 			{
 				if (!vis[i][j])
 					Q.push(make_pair(i, j));
-				int sum = 0;
-				vector<pair<int, int> > tmp;
-
+				sm = 0;
 				while(!Q.empty())
 				{
 					int temp1 = Q.front().first;
@@ -52,18 +51,24 @@ int main(void)
 						if(!vis[temp1][temp2])
 						{
 							tmp.push_back(make_pair(temp1, temp2));
-							sum += board[temp1][temp2];
+							sm += board[temp1][temp2];
 						}
 						if(!vis[nx][ny])
 						{
 							tmp.push_back(make_pair(nx, ny));
-							sum += board[nx][ny];
+							sm += board[nx][ny];
 							vis[nx][ny] = 1;
 							Q.push(make_pair(nx, ny));
 						}
 					}
 				}
 			}
+			for(int k = 0; k < tmp.size(); k++)
+				board[tmp[k].first][tmp[k].second] = (sm / tmp.size());
 		}
+		if (!flag)
+			break;
+		cnt++;
 	}
+	cout << cnt;
 }
