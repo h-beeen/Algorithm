@@ -52,6 +52,14 @@ int main(void)
 						if(!vis[temp1][temp2])
 						{
 							tmp.push_back(make_pair(temp1, temp2));
+							sum += board[temp1][temp2];
+						}
+						if(!vis[nx][ny])
+						{
+							tmp.push_back(make_pair(nx, ny));
+							sum += board[nx][ny];
+							vis[nx][ny] = 1;
+							Q.push(make_pair(nx, ny));
 						}
 					}
 				}
