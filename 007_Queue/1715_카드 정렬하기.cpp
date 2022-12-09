@@ -15,15 +15,16 @@ int main(void)
 
 	for(int i = 0; i < n - 1; i++)
 	{
-		a = pq.top();
-			cout << a << ' ';
-		pq.pop();
-		b = pq.top();
-			cout << b << endl;
-		pq.pop();
-
-		sm += (a + b);
-		pq.push(sm);
+		if(pq.size() > 1)
+		{
+			a = pq.top();
+			pq.pop();
+			b = pq.top();
+			pq.pop();
+			int temp = a + b;
+			sm += temp;
+			pq.push(temp);
+		}
 	}
 	cout << sm;
 }
