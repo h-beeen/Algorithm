@@ -5,11 +5,6 @@ using namespace std;
 int n, c, temp;
 vector <int> v;
 
-bool binary_dfs(int k)
-{
-
-}
-
 int main(void)
 {
 	ios::sync_with_stdio(0);
@@ -25,14 +20,7 @@ int main(void)
 	sort(v.begin(), v.end());
 
 	int st = 0;
-	int en = 1000000000;
-	int mid;
-	while (st < en)
-	{
-		mid = (st + en) / 2;
-		if(binary_dfs(mid))
-			st = mid + 1;
-		else
-			en = mid - 1;
-	}
+	int en = v[n-1];
+
+	
 }
