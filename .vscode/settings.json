@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"ios": "cpp",
+		"type_traits": "cpp",
+		"algorithm": "cpp"
+	}
+}
